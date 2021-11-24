@@ -28,6 +28,6 @@ class Packet {
     }
     
     func printTotalSent()->Void{
-        print("Sent  \(self.getTotalSent()-1) packages ")
+        print("Sent \(self.getTotalSent()-2) packages ")
     }
 }

@@ -33,4 +33,12 @@ class EndPoint : ITComponent {
         print("Received \(self.packetsReceived) \(self.color), lost \(self.packetsDiscarded) ")
     }
     
+    func getReceived()->Int {
+        return self.packetsReceived
+    }
+    
+    func getDiscarded()->Int {
+        return self.packetsDiscarded
+    }
+    
 }

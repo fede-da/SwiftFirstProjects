@@ -21,41 +21,24 @@ router2.setDest(lista: endPoints)
 router1.setDest(lista: ports2)
 source1.setDest(lista: ports1)
 
-sleep(3)
-
-func waiter () async{
-    await withTaskGroup(of: Void.self, body: {
-        taskGroup in
-        for _ in 0..<4 {
-            taskGroup.addTask{
-                await source1.startStream()
-            }
-        }
-        return
-    })
-}
-
 let t = Task{
-    await waiter()
+    await source1.startStream()
 }
 
-sleep(3)
-t.cancel()
-
-if t.isCancelled {
+func printStats(){
+    var rec = 0
     for ep in endPoints {
         ep.printStats()
+        rec += ep.getReceived()
     }
+    Packet().printTotalSent()
+    print("Checksum, received : \(rec) packets")
 }
 
+sleep(6) //This time can be changed as we want
 
-
-
-
-/*
- 
- let handle = Task{
-     await source1.startStream()
- }
-
-*/
+Task{
+    source1.stopStream()
+    t.cancel()
+}
+printStats()

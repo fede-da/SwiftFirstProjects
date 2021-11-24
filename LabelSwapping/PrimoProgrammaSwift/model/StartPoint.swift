@@ -11,10 +11,12 @@ class StartPoint : ITComponent {
     
     private let generator : ColorsGenerator
     private var packet:Packet
+    private var stream:Bool
     
     override init(){
         generator=ColorsGenerator()
         self.packet = Packet()
+        self.stream=false
         super.init()
     }
     
@@ -27,10 +29,15 @@ class StartPoint : ITComponent {
     }
     
     func startStream () async {
-        while true {
+        self.stream=true
+        while self.stream {
             sendPacket()
             usleep(1000) // 1000000 -> 1 second
         }
+    }
+    
+    func stopStream() {
+        self.stream=false;
     }
     
 }
