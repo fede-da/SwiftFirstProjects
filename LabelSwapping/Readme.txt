@@ -14,7 +14,7 @@ StartPoint generates and fills packets with random data needed for "sendPacket" 
 
 Actor 3 : Router
 
-Router takes input packets from senders (startpoint or other routers), reads packets data and forward them on the right ports.
+Router takes input packets from senders (startpoint or other routers), reads packets data and forwards them on the right port.
 
 Last actor : EndPoint
 
@@ -28,3 +28,5 @@ This project is based on concurrency so Packets generation is handled by threads
 
 Timer class is set but not used.
 
+P.S. : If you don't have Xcode and want to compile it just run from terminal ->
+swiftc main.swift model/* variables/* -o main
