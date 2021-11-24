@@ -26,16 +26,11 @@ class StartPoint : ITComponent {
         self.packet = Packet()
     }
     
-    func startStream(){
-        var r1 = Int.random(in: 0..<20)
-        var r2 = Int.random(in: 0..<20)
-        while r1 != r2 {
+    func startStream () async {
+        while true {
             sendPacket()
-            usleep(10000) // 1000000 -> 1 second
-            r1 = Int.random(in: 0..<20)
-            r2 = Int.random(in: 0..<20)
+            usleep(1000) // 1000000 -> 1 second
         }
-        self.packet.printTotalSent()
     }
     
 }
