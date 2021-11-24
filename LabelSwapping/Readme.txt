@@ -5,7 +5,7 @@ How will it do that?
 
 Well there are 4 actors in this process.
 
-Obviously we have a Packet that will start from some sources, go into some routers and arrive to endpoints.
+Obviously we have a Packet that will start from some source, go into some routers and arrive to endpoints.
 When a new packet is created it contains any data but just its unique ID, data'll be set by sender.
 
 Next actor is the sender : StartPoint
