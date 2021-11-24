@@ -30,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33471F3D274E91FE00A95F0B /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		33ABAF3527478B36001A92BB /* PrimoProgrammaSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimoProgrammaSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		33ABAF3827478B36001A92BB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		33ABAF3F27478CA1001A92BB /* appunti.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = appunti.txt; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		33ABAF2C27478B35001A92BB = {
 			isa = PBXGroup;
 			children = (
+				33471F3D274E91FE00A95F0B /* Readme.txt */,
 				33ABAF3F27478CA1001A92BB /* appunti.txt */,
 				33ABAF3727478B36001A92BB /* PrimoProgrammaSwift */,
 				33ABAF3627478B36001A92BB /* Products */,

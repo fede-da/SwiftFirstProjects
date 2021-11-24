@@ -23,7 +23,7 @@ source1.setDest(lista: ports1)
 
 let t = Task{
     await source1.startStream()
-}
+} //Starts packet generation
 
 func printStats(){
     var rec = 0
@@ -33,7 +33,7 @@ func printStats(){
     }
     Packet().printTotalSent()
     print("Checksum, received : \(rec) packets")
-}
+} //Just print some stats
 
 sleep(6) //This time can be changed as we want
 

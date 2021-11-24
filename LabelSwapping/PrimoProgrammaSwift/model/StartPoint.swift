@@ -22,7 +22,7 @@ class StartPoint : ITComponent {
     
     func sendPacket(){
         self.packet.setColor(newData: generator.getRandomColor())
-        let port = self.packet.getColor().1
+        let port = self.packet.getColor().1 //destination port is written inside package data
         print("Sent packet \(self.packet.getColor().0) number \(self.packet.getTotalSent())")
         self.dest[port].addPacket(packet: self.packet)
         self.packet = Packet()
@@ -32,11 +32,11 @@ class StartPoint : ITComponent {
         self.stream=true
         while self.stream {
             sendPacket()
-            usleep(1000) // 1000000 -> 1 second
+            usleep(1000) // 1000000 -> 1 second, this time is the fire rate
         }
     }
     
-    func stopStream() {
+    func stopStream() { //stops stream
         self.stream=false;
     }
     

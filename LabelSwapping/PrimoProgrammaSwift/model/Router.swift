@@ -29,17 +29,4 @@ class Router : ITComponent{
         self.dest[port].addPacket(packet: packet)
     }
     
-    func consume(){
-        while true {
-            consumePacket()
-        }
-    }
-    
-    func consumePacket(){
-        if !packets.isEmpty {
-            sendPacket(packet: packets[0])
-        }
-    }
-    
-    
 }
