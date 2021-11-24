@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		33ABAF3927478B36001A92BB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF3827478B36001A92BB /* main.swift */; };
 		33ABAF412749E115001A92BB /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF402749E115001A92BB /* MyTimer.swift */; };
-		33ABAF43274A629E001A92BB /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF42274A629E001A92BB /* Simulator.swift */; };
 		33ABAF48274A63C2001A92BB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF47274A63C2001A92BB /* Router.swift */; };
 		33ABAF4A274A640A001A92BB /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF49274A640A001A92BB /* EndPoint.swift */; };
 		33ABAF4C274A6AB6001A92BB /* ITComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF4B274A6AB6001A92BB /* ITComponent.swift */; };
@@ -35,7 +34,6 @@
 		33ABAF3827478B36001A92BB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		33ABAF3F27478CA1001A92BB /* appunti.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = appunti.txt; sourceTree = "<group>"; };
 		33ABAF402749E115001A92BB /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
-		33ABAF42274A629E001A92BB /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		33ABAF47274A63C2001A92BB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		33ABAF49274A640A001A92BB /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		33ABAF4B274A6AB6001A92BB /* ITComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITComponent.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				33ABAF402749E115001A92BB /* MyTimer.swift */,
-				33ABAF42274A629E001A92BB /* Simulator.swift */,
 				33ABAF47274A63C2001A92BB /* Router.swift */,
 				33ABAF49274A640A001A92BB /* EndPoint.swift */,
 				33ABAF4B274A6AB6001A92BB /* ITComponent.swift */,
@@ -170,7 +167,6 @@
 				33ABAF48274A63C2001A92BB /* Router.swift in Sources */,
 				33ABAF4A274A640A001A92BB /* EndPoint.swift in Sources */,
 				33ABAF53274AA453001A92BB /* Data.swift in Sources */,
-				33ABAF43274A629E001A92BB /* Simulator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
